@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #f2f2f2;
+}
+
+/* Accent color */
+:root {
+  --accent: #ff9f43;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: #111;
+}
+
+.logo {
+  color: var(--accent);
+}
+
+.header a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 20px auto;
+  opacity: 0.85;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--accent);
+  color: #000;
+}
+
+.outline {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Sections */
+section {
+  padding: 70px 8%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--accent);
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skill i {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+/* Projects */
+.project-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card h3{
+  color: #ff9f43;
+}
+/* Coding Profiles */
+.profile-links {
+  text-align: center;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin: 10px 15px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.profile-links i {
+  margin-right: 6px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--accent);
+}
+
+.socials a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
